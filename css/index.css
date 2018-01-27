@@ -57,7 +57,10 @@ a {
       letter-spacing: 2px; } }
   .navbar .nav-item {
     font-size: 1.4rem;
-    padding-right: 15px; }
+    padding-right: 15px;
+    border-bottom: 1px solid transparent; }
+    .navbar .nav-item:hover {
+      border-bottom: 1px solid #000; }
   .navbar .nav-link {
     font-weight: 400; }
 
