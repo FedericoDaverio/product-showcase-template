@@ -23,7 +23,25 @@ body {
     background-color: darken($primary, 6%) !important;
     border-color: darken($primary, 8%) !important;
   }
+
+  &:focus {
+    box-shadow: 0 0 0 4px rgba($primary, 0.6);
+  }
 }
+
+a {
+  color: $primary;
+
+  &:hover {
+    color: darken($primary, 4%);
+  }
+
+  &:active {
+    color: darken($primary, 6%) !important;
+  }
+}
+
+
 
 .card {
   border-radius: 0;
@@ -41,8 +59,12 @@ body {
   background-color: $primary !important;
 }
 
+.btn-link {
+  color: $primary !important;
+}
+
 .navbar {
-  box-shadow: 0 1px 0 $primary, 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 0 $primary;
   background: #fff;
 
   .navbar-brand {
@@ -107,5 +129,45 @@ body {
 #newsletter {
   .form-control {
     border-radius: 0;
+  }
+}
+
+#about {
+  .info-header {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+#authors {
+  img {
+    margin-top: -35px;
+  }
+
+  .card-body {
+
+    transition: all 200ms;
+
+    a,
+    h4 {
+      transition: all 200ms;
+    }
+
+    &:hover {
+      background-color: $primary;
+      color: #fff;
+    }
+
+    &:hover h4 {
+      color: #fff !important;
+
+    }
+    &:hover a {
+      color: #fff;
+
+      &:hover {
+        color: rgba(#fff, 0.8);
+      }
+    }
   }
 }
