@@ -41,8 +41,6 @@ a {
   }
 }
 
-
-
 .card {
   border-radius: 0;
 }
@@ -104,7 +102,25 @@ a {
   background-size: cover;
   background-image: url("../img/hero.jpeg");
   background-position: center;
-  min-height: 585px;
+  min-height: 515px;
+
+  [class^="display"] {
+    font-size: 56px;
+  }
+
+  @media (min-width: 576px) {
+    min-height: 585px;
+
+    [class^="display"] {
+      font-size: 76px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    [class^="display"] {
+      font-size: 88px;
+    }
+  }
 
   .primary-overlay {
     position: absolute;
@@ -134,8 +150,12 @@ a {
 
 #about {
   .info-header {
-    width: 50%;
+    width: 100%;
     margin: auto;
+
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
   }
 }
 
@@ -145,7 +165,6 @@ a {
   }
 
   .card-body {
-
     transition: all 200ms;
 
     a,
@@ -160,7 +179,6 @@ a {
 
     &:hover h4 {
       color: #fff !important;
-
     }
     &:hover a {
       color: #fff;

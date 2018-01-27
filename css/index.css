@@ -64,7 +64,17 @@ a {
   background-size: cover;
   background-image: url("../img/hero.jpeg");
   background-position: center;
-  min-height: 585px; }
+  min-height: 515px; }
+  #showcase [class^="display"] {
+    font-size: 56px; }
+  @media (min-width: 576px) {
+    #showcase {
+      min-height: 585px; }
+      #showcase [class^="display"] {
+        font-size: 76px; } }
+  @media (min-width: 768px) {
+    #showcase [class^="display"] {
+      font-size: 88px; } }
   #showcase .primary-overlay {
     position: absolute;
     background: rgba(50, 146, 166, 0.8);
@@ -81,8 +91,11 @@ a {
   border-radius: 0; }
 
 #about .info-header {
-  width: 50%;
+  width: 100%;
   margin: auto; }
+  @media screen and (min-width: 768px) {
+    #about .info-header {
+      width: 50%; } }
 
 #authors img {
   margin-top: -35px; }
