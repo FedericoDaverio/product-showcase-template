@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.input-group-text,
+.form-control,
 .btn {
   border-radius: unset !important;
 }
@@ -187,5 +189,15 @@ a {
         color: rgba(#fff, 0.8);
       }
     }
+  }
+}
+
+#contact {
+  .fa-circle {
+    color: $primary;
+  }
+
+  textarea {
+    height: 48px;
   }
 }

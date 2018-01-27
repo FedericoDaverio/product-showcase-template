@@ -2,6 +2,8 @@ body {
   margin-top: 102px;
   -webkit-font-smoothing: antialiased; }
 
+.input-group-text,
+.form-control,
 .btn {
   border-radius: unset !important; }
 
@@ -114,5 +116,11 @@ a {
     color: #fff; }
     #authors .card-body:hover a:hover {
       color: rgba(255, 255, 255, 0.8); }
+
+#contact .fa-circle {
+  color: #3292a6; }
+
+#contact textarea {
+  height: 48px; }
 
 /*# sourceMappingURL=index.css.map */
