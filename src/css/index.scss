@@ -2,7 +2,7 @@ $primary: #3292a6;
 $overlay: rgba(50, 146, 166, 0.8);
 
 body {
-  margin-top: 105px;
+  margin-top: 102px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -10,8 +10,39 @@ body {
   border-radius: unset !important;
 }
 
+.btn-primary {
+  background-color: $primary;
+  border-color: darken($primary, 2%);
+
+  &:hover {
+    background-color: darken($primary, 4%);
+    border-color: darken($primary, 6%);
+  }
+
+  &:active {
+    background-color: darken($primary, 6%) !important;
+    border-color: darken($primary, 8%) !important;
+  }
+}
+
+.card {
+  border-radius: 0;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.border-primary {
+  border-color: $primary !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
 .navbar {
-  box-shadow: 0 1px 1px $primary;
+  box-shadow: 0 1px 0 $primary, 0 1px 1px rgba(0,0,0,0.1);
   background: #fff;
 
   .navbar-brand {
@@ -51,7 +82,7 @@ body {
   background-size: cover;
   background-image: url("../img/hero.jpeg");
   background-position: center;
-  min-height: 600px;
+  min-height: 585px;
 
   .primary-overlay {
     position: absolute;
@@ -70,5 +101,11 @@ body {
 
   img {
     max-width: 70% !important;
+  }
+}
+
+#newsletter {
+  .form-control {
+    border-radius: 0;
   }
 }
