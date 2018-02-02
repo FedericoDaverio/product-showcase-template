@@ -11,6 +11,7 @@ Demo page showcasing a product.
 * [Browser-Sync](https://github.com/Browsersync/browser-sync)
 * [Nodemon](https://github.com/remy/nodemon)
 * [Node-Sass](https://github.com/sass/node-sass)
+* [Smooth-Scroll](https://www.jqueryscript.net/menu/jQuery-Plugin-Fixed-Bootstrap-4-Nav-Smooth-Scroll-navbar-fixed-js.html)
 
 ## Usage
 
