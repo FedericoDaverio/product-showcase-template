@@ -18,6 +18,18 @@ body {
   border-radius: unset !important;
 }
 
+a {
+  color: $primary;
+
+  &:hover {
+    color: darken($primary, 4%);
+  }
+
+  &:active {
+    color: darken($primary, 6%) !important;
+  }
+}
+
 .btn-primary {
   background-color: $primary;
   border-color: darken($primary, 2%);
@@ -34,18 +46,6 @@ body {
 
   &:focus {
     box-shadow: 0 0 0 4px rgba($primary, 0.6);
-  }
-}
-
-a {
-  color: $primary;
-
-  &:hover {
-    color: darken($primary, 4%);
-  }
-
-  &:active {
-    color: darken($primary, 6%) !important;
   }
 }
 
@@ -82,7 +82,7 @@ a {
       color: $primary;
     }
 
-    h3 {
+    .logo {
       display: none !important;
     }
 
@@ -91,7 +91,7 @@ a {
     }
 
     @media screen and (min-width: 386px) {
-      h3 {
+      .logo {
         display: inline !important;
         font-weight: 100;
         letter-spacing: 2px;
@@ -115,27 +115,26 @@ a {
   }
 }
 
-#showcase {
+.showcase {
   position: relative;
   background-size: cover;
-  background-image: url("../images/hero.jpeg");
-  background-position: center;
+  background: url("../images/hero.jpeg") center;
   min-height: 515px;
 
-  [class^="display"] {
+  [class^="slogan"] {
     font-size: 56px;
   }
 
   @media (min-width: 576px) {
     min-height: 585px;
 
-    [class^="display"] {
+    [class^="slogan"] {
       font-size: 76px;
     }
   }
 
   @media (min-width: 768px) {
-    [class^="display"] {
+    [class^="slogan"] {
       font-size: 88px;
     }
   }
@@ -155,7 +154,7 @@ a {
     }
   }
 
-  img {
+  .book {
     max-width: 70% !important;
   }
 }
@@ -166,7 +165,7 @@ a {
   }
 }
 
-#about {
+.about {
   .info-header {
     width: 100%;
     margin: auto;
@@ -177,20 +176,20 @@ a {
   }
 }
 
-#authors {
-  img {
+.authors {
+  .author-image {
     margin-top: -35px;
   }
 
   .card-body {
     transition: all 200ms;
 
-    a,
-    h4 {
+    .author-social,
+    .author-role {
       transition: all 200ms;
     }
 
-    a {
+    .author-social {
       padding-bottom: 10px;
       border-bottom: 1px solid transparent;
     }
@@ -201,12 +200,12 @@ a {
       color: #fff;
     }
 
-    &:hover h4,
-    &:focus-within h4 {
+    &:hover .author-role,
+    &:focus-within .author-role {
       color: #fff !important;
     }
-    &:hover a,
-    &:focus-within a {
+    &:hover .author-social,
+    &:focus-within .author-social {
       color: rgba(#fff, 0.9);
 
       &:hover {
@@ -217,12 +216,12 @@ a {
   }
 }
 
-#contact {
+.contact {
   .fa-circle {
     color: $primary;
   }
 
-  textarea {
+  .message {
     height: 48px;
   }
 }
