@@ -1,20 +1,29 @@
 # Product Showcase Template
 
-Demo page showcasing a product.
+![Website Screenshot](https://user-images.githubusercontent.com/6123841/43707400-a9633060-9970-11e8-8e69-3a34e2e0d132.png)
 
-[Live](http://azdanov.js.org/product-showcase-template/)
+A product showcase page.
+
+[Live](https://azdanov.github.io/product-showcase-template/)
 
 ## Tools
 
+* [Yarn](https://yarnpkg.com/en/)
 * [Bootstrap 4](https://github.com/twbs/bootstrap)
 * [Font Awesome 5](https://github.com/FortAwesome/Font-Awesome)
-* [Browser-Sync](https://github.com/Browsersync/browser-sync)
-* [Nodemon](https://github.com/remy/nodemon)
-* [Node-Sass](https://github.com/sass/node-sass)
+* [Parcel](https://parceljs.org/)
+* [Prettier](https://prettier.io/)
+* [Gh-pages](https://github.com/tschaub/gh-pages/)
 * [Smooth-Scroll](https://www.jqueryscript.net/menu/jQuery-Plugin-Fixed-Bootstrap-4-Nav-Smooth-Scroll-navbar-fixed-js.html)
 
 ## Usage
 
-* `npm run dev` - start **browser-sync** in watch mode for live reloading
-* `npm run build:css` - process **scss** inside **src/** with output to **css/** using **node-sass**
-* `npm run build:watch` - start **nodemon** in watch mode to monitor **scss** changes with automatic **css** rebuilding
+* `yarn` - install all dependencies
+* `yarn start` - start `parcel` in watch mode for live reloading
+* `yarn build` - run `parcel` in production mode and output into `dist` directory
+* `yarn format` - use `prettier` to format `*.js`, `.css` and `.scss` files
+* `yarn deploy` - host `dist` folder on Github Pages with `gh-pages`
+
+## License
+
+[MIT](./LICENSE)
