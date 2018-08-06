@@ -1,9 +1,15 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
 $primary: #3292a6;
 $overlay: rgba(50, 146, 166, 0.8);
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   margin-top: 102px;
-  -webkit-font-smoothing: antialiased;
 }
 
 .input-group-text,
@@ -67,6 +73,10 @@ a {
   box-shadow: 0 1px 0 $primary;
   background: #fff;
 
+  .container {
+    min-height: 70px;
+  }
+
   .navbar-brand {
     .fa-circle {
       color: $primary;
@@ -108,7 +118,7 @@ a {
 #showcase {
   position: relative;
   background-size: cover;
-  background-image: url("../img/hero.jpeg");
+  background-image: url("../images/hero.jpeg");
   background-position: center;
   min-height: 515px;
 
@@ -180,19 +190,28 @@ a {
       transition: all 200ms;
     }
 
-    &:hover {
+    a {
+      padding-bottom: 10px;
+      border-bottom: 1px solid transparent;
+    }
+
+    &:hover,
+    &:focus-within {
       background-color: $primary;
       color: #fff;
     }
 
-    &:hover h4 {
+    &:hover h4,
+    &:focus-within h4 {
       color: #fff !important;
     }
-    &:hover a {
-      color: #fff;
+    &:hover a,
+    &:focus-within a {
+      color: rgba(#fff, 0.9);
 
       &:hover {
-        color: rgba(#fff, 0.8);
+        border-bottom: 1px solid #ddd;
+        color: #fff;
       }
     }
   }
