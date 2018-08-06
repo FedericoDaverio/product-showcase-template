@@ -1,10 +1,8 @@
 # Product Showcase Template
 
+<p>A product showcase page. <a href="https://azdanov.github.io/product-showcase-template/">Live Version</a></p>
+
 ![Website Screenshot](https://user-images.githubusercontent.com/6123841/43707400-a9633060-9970-11e8-8e69-3a34e2e0d132.png)
-
-A product showcase page.
-
-[Live](https://azdanov.github.io/product-showcase-template/)
 
 ## Tools
 
