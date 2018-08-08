@@ -6,13 +6,13 @@
 
 ## Tools
 
-* [Yarn](https://yarnpkg.com/en/)
-* [Bootstrap 4](https://github.com/twbs/bootstrap)
-* [Font Awesome 5](https://github.com/FortAwesome/Font-Awesome)
-* [Parcel](https://parceljs.org/)
-* [Prettier](https://prettier.io/)
-* [Gh-pages](https://github.com/tschaub/gh-pages/)
-* [Smooth-Scroll](https://www.jqueryscript.net/menu/jQuery-Plugin-Fixed-Bootstrap-4-Nav-Smooth-Scroll-navbar-fixed-js.html)
+* [Yarn](https://yarnpkg.com/en/) - Fast, reliable, and secure dependency management for JavaScript.
+* [Bootstrap 4](https://github.com/twbs/bootstrap) - Sleek, intuitive, and powerful front-end framework for faster and easier web development.
+* [Font Awesome 5](https://github.com/FortAwesome/Font-Awesome) - The iconic SVG, font, and CSS toolkit.
+* [Parcel](https://parceljs.org/) - Blazing fast, zero configuration web application bundler.
+* [Prettier](https://prettier.io/) - An opinionated code formatter.
+* [gh-pages](https://github.com/tschaub/gh-pages/) - General purpose task for publishing files to a gh-pages branch on GitHub.
+* [smooth-scroll](https://www.jqueryscript.net/menu/jQuery-Plugin-Fixed-Bootstrap-4-Nav-Smooth-Scroll-navbar-fixed-js.html) - a jQuery plugin that extends default Bootstrap navbar with scrollspy and smooth scroll support.
 
 ## Usage
 
